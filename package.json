@@ -1,0 +1,33 @@
+{
+  "name": "openwave",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OpenWave — ad-free music player with Spotify search, YouTube playback and Audius",
+  "scripts": {
+    "dev": "vite",
+    "api": "node server.mjs --api-only",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host --port 4173",
+    "serve": "node server.mjs dist",
+    "web": "npm run build && node server.mjs dist",
+    "tauri": "tauri",
+    "desktop": "tauri dev",
+    "desktop:build": "tauri build --no-bundle"
+  },
+  "dependencies": {
+    "lucide-react": "^1.61.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.5"
+  }
+}
